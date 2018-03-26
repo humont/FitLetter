@@ -36,7 +36,18 @@ layout: default
               <p class="n_s l_m fw8 tc"> 🏋🏽‍♀️ The Base Plan 🏋🏼‍♂️ </p>
               <p>For those who are competent in the basic movements, and want to focus on getting stronger</p>
               <p>£12/month</p>
-              <button class="tc" type="button" name="button">Begin</button>
+              
+              <form action="https://elated-wiles-0c0fb1.netlify.com/.netlify/functions/subscribe" method="POST">
+                <script
+                  src="https://checkout.stripe.com/checkout.js" 
+                  class="stripe-button"
+                  data-key="pk_test_jbuQCGHDQNv1x7QlG0YX1dm6"
+                  data-name="Base Plan"
+                  data-description="Recurring Monthly Subscription"
+                  data-amount="1200"
+                  data-label="Sign Up Now for £12/month!"></script>
+              </form>
+              
             </div>
           </div>
         </div>
